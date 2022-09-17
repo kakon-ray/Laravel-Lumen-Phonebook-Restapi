@@ -14,3 +14,4 @@
 */
 
 $router->post('/registation','RegistationController@OnRegistatio');
+$router->post('/login','LoginController@OnLogin');
