@@ -31,7 +31,7 @@ class LoginController extends Controller
                 "password" => $password,
                 "company" => 'Khulna it',
                  "iat" => time(),
-                 "exp" => time() + 60
+                 "exp" => time() + 3600
             
             ];
 

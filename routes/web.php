@@ -15,4 +15,9 @@
 
 $router->post('/registation','RegistationController@OnRegistatio');
 $router->post('/login','LoginController@OnLogin');
-$router->post('/tokenTest',['middleware'=>'auth','uses'=>'LoginController@tokenTest']);
+// $router->post('/tokenTest',['middleware'=>'auth','uses'=>'LoginController@tokenTest']);
+
+
+$router->post('/insert',['middleware'=>'auth','uses'=>'PhoneBookController@phoneBookDataInsert']);
+$router->post('/select',['middleware'=>'auth','uses'=>'PhoneBookController@phoneBookDataSelect']);
+$router->post('/delete',['middleware'=>'auth','uses'=>'PhoneBookController@phoneBookDataDelete']);
