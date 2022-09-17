@@ -15,3 +15,4 @@
 
 $router->post('/registation','RegistationController@OnRegistatio');
 $router->post('/login','LoginController@OnLogin');
+$router->post('/tokenTest',['middleware'=>'auth','uses'=>'LoginController@tokenTest']);
